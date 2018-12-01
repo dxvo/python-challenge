@@ -58,16 +58,16 @@ print("---------------------------------------")
 
 with open("PyPoll_out.txt",'w') as outFile:
 	try:
-		outFile.write("\n------------ELECTION RESULT------------")
+		outFile.write("\n------------ELECTION RESULT------------\n")
 		outFile.write("Total Votes: " + str(total_vote)+ "\n")
-		outFile.write("\n---------------------------------------\n")
+		outFile.write("---------------------------------------\n")
 		for i in range(num_of_candidate):
 			name = candidate_list[i].name
 			vote = candidate_list[i].vote
-			outFile.write(name + ":" + str(round(vote*100/total_vote,4)) + "%" + " ("+str(vote)+")" +"\n")
+			outFile.write(name + ": " + str(round(vote*100/total_vote,4)) + "%" + " ("+str(vote)+")" +"\n")
 
-		outFile.write("\n---------------------------------------\n")
-		outFile.write("Winner:" + winner)
+		outFile.write("---------------------------------------\n")
+		outFile.write("Winner: " + winner)
 		outFile.write("\n---------------------------------------\n")
 		
 	finally:
