@@ -22,7 +22,7 @@ with open(file, newline = '') as inputFile:
 				arr[0] = row
 			elif (curr_value  < greatest_decrease):
 				greatest_decrease = curr_value
-				arr[1] = ro
+				arr[1] = row
 				
 	finally:
 		inputFile.close()
