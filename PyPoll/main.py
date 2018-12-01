@@ -41,6 +41,7 @@ current_highest = 0
 winner = ""
 for x in candidate_list:
 	if(x.vote > current_highest):
+		current_highest = x.vote
 		winner = x.name
 
 print("\n------------ELECTION RESULT------------")
@@ -50,10 +51,27 @@ for i in range(num_of_candidate):
 	name = candidate_list[i].name
 	vote = candidate_list[i].vote
 	print(name + ":" + str(round(vote*100/total_vote,4))+ "%" + " ("+str(vote)+")")
+
 print("---------------------------------------")
-print("WInner:" + winner)
+print("Winner:" + winner)
 print("---------------------------------------")
 
+with open("PyPoll_out.txt",'w') as outFile:
+	try:
+		outFile.write("\n------------ELECTION RESULT------------")
+		outFile.write("Total Votes: " + str(total_vote)+ "\n")
+		outFile.write("\n---------------------------------------\n")
+		for i in range(num_of_candidate):
+			name = candidate_list[i].name
+			vote = candidate_list[i].vote
+			outFile.write(name + ":" + str(round(vote*100/total_vote,4)) + "%" + " ("+str(vote)+")" +"\n")
+
+		outFile.write("\n---------------------------------------\n")
+		outFile.write("Winner:" + winner)
+		outFile.write("\n---------------------------------------\n")
+		
+	finally:
+		outFile.close()
 
 
 
