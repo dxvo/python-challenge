@@ -17,3 +17,4 @@
 - The percentage of votes each candidate won
 - The total number of votes each candidate won
 - The winner of the election based on popular vote
+<img width="342" alt="screen shot 2018-12-01 at 10 25 09 am" src="https://user-images.githubusercontent.com/42792976/49330383-78a57480-f553-11e8-828f-116559e04e53.png">
