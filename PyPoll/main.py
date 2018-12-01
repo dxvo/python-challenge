@@ -45,15 +45,15 @@ for x in candidate_list:
 		winner = x.name
 
 print("\n------------ELECTION RESULT------------")
-print("Total Votes: " + str(total_vote))
+print(f"Total Votes: {total_vote}")
 print("---------------------------------------")
 for i in range(num_of_candidate):
 	name = candidate_list[i].name
 	vote = candidate_list[i].vote
-	print(name + ":" + str(round(vote*100/total_vote,4))+ "%" + " ("+str(vote)+")")
+	print(f"{name}: {round(vote*100/total_vote,4)}% ({vote})")
 
 print("---------------------------------------")
-print("Winner:" + winner)
+print(f"Winner: {winner}")
 print("---------------------------------------")
 
 with open("PyPoll_out.txt",'w') as outFile:
