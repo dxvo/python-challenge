@@ -8,7 +8,8 @@
 - The greatest decrease in losses (date and amount) over the entire period
 - Print to both console 
 - Generate an output.txt file
-<img width="441" alt="screen shot 2018-11-30 at 11 53 31 pm" src="https://user-images.githubusercontent.com/42792976/49324824-2c2e4a80-f4fb-11e8-85b4-dab99c981fc8.png">
+<img width="384" alt="screen shot 2018-12-02 at 9 42 01 pm" src="https://user-images.githubusercontent.com/42792976/49352051-bef5f300-f67b-11e8-8917-9143b1456cf9.png">
+
 
 
 ### PyPoll 
